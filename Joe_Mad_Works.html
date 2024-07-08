@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe Madureira - Works</title>
+    <link rel="stylesheet" href="stylesJMW.CSS">
+</head>
+<body>
+    <header>
+        <h1>Joe Madureira: Works</h1>
+        <nav>
+            <ul>
+                <li><a href="Joe_Mad_Home.html">Home</a></li>
+                <li><a href="Joe_Mad_Bio.html">Biography</a></li>
+                <li><a href="Joe_Mad_Works.html">Works</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="works">
+            <h2>Artwork Gallery</h2>
+            <div class="gallery">
+                <img src="JMUX-men.jpg" alt="Artwork 1" onclick="openLightbox();currentSlide(1)">
+                <img src="JMBC1.jpg" alt="Artwork 2" onclick="openLightbox();currentSlide(2)">
+                <img src="Dark1.jpg" alt="Artwork 3" onclick="openLightbox();currentSlide(3)">
+                <img src="JMRK1.jpg" alt="Artwork 4" onclick="openLightbox();currentSlide(3)">
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+    </main>
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-slide" src="JMUX-men.jpg" alt="Artwork 1">
+            <img class="lightbox-slide" src="JMBC1.jpg" alt="Artwork 2">
+            <img class="lightbox-slide" src="Dark1.jpg" alt="Artwork 3">
+            <img class="lightbox-slide" src="JMRK1.jpg" alt="Artwork 3">
+            <!-- Add more images as needed -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Joe Madureira's Art Career</p>
+    </footer>
+    <script src="Joe_Mad_WorksJS.JS"></script>
+</body>
+</html>
